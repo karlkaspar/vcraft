@@ -1,4 +1,4 @@
-
+import * as React from "react";
 const Footer = () => {
   return <h1>I am Footer</h1>;
 };

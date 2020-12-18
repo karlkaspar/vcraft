@@ -1,7 +1,11 @@
 import * as React from "react";
 
 const Header = () => {
-  return <h1>I am Footer</h1>;
+  return <nav className="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div className="container">
+        <a className="navbar-brand" href="#">Vraft</a>
+        </div>
+    </nav>;
 };
 
 export default Header;

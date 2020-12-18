@@ -1,11 +1,19 @@
 import * as React from "react";
-import { ApolloProvider } from "react-apollo";
 import { render } from "react-dom";
 
+import { ApolloProvider } from "react-apollo";
+import graphqlClient from "./api/graphql";
+
 import Header from "./components/header/header";
-import Root from "./components/root/root";
 import Footer from "./components/footer/footer";
-this.context.test = '123';
+
+import Home from "./modules/home/home";
+
+// IMPORT BOOTSTRAP CSS, SO WE CAN USE ALL OF IT'S CSS
+// I KNOW WE CAN ALSO IMPORT IT PARTIALLY
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 render(
   <>
     <Header />
@@ -14,14 +22,16 @@ render(
 );
 
 render(
-  <>
-    <Root />
-  </>,
-  document.getElementById("app")
-);
+  <ApolloProvider client={graphqlClient}>
+    <Home />
+  </ApolloProvider>,  document.getElementById("app"));
+
+/*
+
 render(
   <>
     <Footer />
   </>,
   document.getElementById("footer")
 );
+*/
