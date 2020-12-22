@@ -11,7 +11,13 @@ const typeDefs = gql`
   type Query {
     users: [User!]!
   }
+  type Mutation {
+    createUser(
+      email: String!,
+      firstName: String!,
+      lastName: String!,
+      password: String!
+    ): User!
+  }
 `;
-// type Query IS A QUERY WHICH GETS OUR USERS
-
 export default typeDefs;

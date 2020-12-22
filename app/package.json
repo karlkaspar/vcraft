@@ -14,6 +14,9 @@
   },
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
+    "@types/react-addons-update": "^0.14.20",
+    "@types/react-router-dom": "^5.1.6",
+    "apollo-boost": "^0.4.9",
     "apollo-cache-inmemory": "^1.6.6",
     "apollo-client": "^2.6.10",
     "apollo-link-http": "^1.5.17",
@@ -25,6 +28,7 @@
     "react-bootstrap": "^1.4.0",
     "react-dom": ">=16.8.0",
     "react-hook-form": "^6.13.1",
+    "react-router-dom": "^5.2.0",
     "styled-components": "4.4.1"
   }
 }
