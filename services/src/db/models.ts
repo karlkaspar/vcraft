@@ -16,8 +16,8 @@ export class User extends Model<User> {
   @Column({
     allowNull: false,
     type: DataType.STRING
-  }) // UGLY FIX, ERROR: "NO OVERLOAD MATCHES THIS CALL" REMOVE "as any" TO SEE IT
-  email!: string; // ! ALLOWS US TO PASS AN EMPTY VALUE
+  })
+  email!: string;
 
   @Column({
     allowNull: false,
@@ -28,15 +28,15 @@ export class User extends Model<User> {
   @Column({
     allowNull: false,
     type: DataType.STRING
-  }) // UGLY FIX, ERROR: "NO OVERLOAD MATCHES THIS CALL" REMOVE "as any" TO SEE IT
-  lastName!: string; // ! ALLOWS US TO PASS AN EMPTY VALUE
+  })
+  lastName!: string;
 
 
   @Column({
     allowNull: false,
     type: DataType.STRING
-  }) // UGLY FIX, ERROR: "NO OVERLOAD MATCHES THIS CALL" REMOVE "as any" TO SEE IT
-  password!: string; // ! ALLOWS US TO PASS AN EMPTY VALUE
+  })
+  password!: string;
 }
 
 export default [User]

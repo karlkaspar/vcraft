@@ -14,6 +14,8 @@ import Footer from "./shared/footer/footer";
 // IMPORT BOOTSTRAP CSS, SO WE CAN USE ALL OF IT'S CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
+
 render(
   <>
     <Header />

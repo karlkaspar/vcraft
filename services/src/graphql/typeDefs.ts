@@ -18,6 +18,10 @@ const typeDefs = gql`
       lastName: String!,
       password: String!
     ): User!
+    loginUser(
+      email: String!,
+      password: String!
+    ): User
   }
 `;
 export default typeDefs;

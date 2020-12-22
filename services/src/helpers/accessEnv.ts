@@ -1,6 +1,5 @@
 const cache: { [key: string]: any } = {};
 // ALLOWS US TO GET VALUES FROM proccess.env
-// NEEDS A .env FILE TO WORK
 const accessEnv = (key: string, defaultValue?: any) => {
   if (!(key in process.env)) {
     if (defaultValue) return defaultValue;

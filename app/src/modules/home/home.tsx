@@ -9,7 +9,6 @@ export default class Home extends React.PureComponent<RouteComponentProps<{}>> {
     },
     loggedIn: false
   };
-
   public render() {
     return (
       <React.Fragment>
