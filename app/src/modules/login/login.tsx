@@ -27,24 +27,25 @@ export default class Login extends React.PureComponent<RouteComponentProps<{}>> 
       <Mutation<User> mutation={loginMutation}>
         {mutate => (
           <React.Fragment>
-            <h2>Lets login</h2>
+            <h2 className="mb-5">Lets login</h2>
             <Form className="mx-auto my-w-75">
-              <Form.Group controlId="email">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" name="email" placeholder="Enter email" onChange={this.handleChange} />
-                <Form.Text className="text-muted">
-                  We'll never share your email with anyone else.
-                </Form.Text>
-              </Form.Group>
+              <div className="ml-3">
+                <Form.Group controlId="email">
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control type="email" name="email" placeholder="Enter email" onChange={this.handleChange} />
+                  <Form.Text className="text-muted">
+                    We'll never share your email with anyone else.
+                  </Form.Text>
+                </Form.Group>
 
-              <Form.Group controlId="password">
-                <Form.Label>Desired password</Form.Label>
-                <Form.Control type="password" name="password" placeholder="Password" onChange={this.handleChange} />
-                <Form.Text className="text-muted">
-                  We'll never ask for your password.
-                </Form.Text>
-              </Form.Group>
-
+                <Form.Group controlId="password">
+                  <Form.Label>Desired password</Form.Label>
+                  <Form.Control type="password" name="password" placeholder="Password" onChange={this.handleChange} />
+                  <Form.Text className="text-muted">
+                    We'll never ask for your password.
+                  </Form.Text>
+                </Form.Group>
+              </div>
               <div className="d-flex justify-content-center">
                 <Button variant="success" type="button" className="ml-4" onClick={async ()=> {
                   try {
