@@ -6,7 +6,7 @@ const typeDefs = gql`
     firstName: String!
     lastName: String!
     email: String!
-    password: String!
+    password: String
   }
   type Query {
     users: [User!]!
@@ -20,7 +20,7 @@ const typeDefs = gql`
     ): User!
     loginUser(
       email: String!,
-      password: String!
+      password: String
     ): User
   }
 `;

@@ -23,6 +23,7 @@ export default class Register extends React.PureComponent<RouteComponentProps<{}
   handleChange = (e: any) => {
     const { name, value } = e.target;
     this.setState({ user: { ...this.state.user, [name]: value} });
+    console.log(this.state);
   };
   public render() {
     return (

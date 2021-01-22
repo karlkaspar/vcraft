@@ -1,9 +1,10 @@
 import * as React from 'react';
 import BackButton from '../_common/back_button/back_button';
 
+
 // TODO: BACK BUTTON
 
-const Header = () => {
+ const Header = () => {
 
   return <nav className="navbar navbar-expand-lg navbar-dark bg-dark static-top mb-5">
       <div className="container">
@@ -11,5 +12,4 @@ const Header = () => {
       </div>
     </nav>;
 };
-
-export default Header;
+export default Header
