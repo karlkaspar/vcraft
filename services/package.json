@@ -6,13 +6,16 @@
   "scripts": {
     "db:migrate": "sequelize db:migrate",
     "db:migrate:undo": "sequelize db:migrate:undo",
-    "watch": "ts-node-dev --respawn index.dev.ts"
+    "watch": "ts-node-dev --respawn index.dev.ts",
+    "test": "jest --watchAll"
   },
   "devDependencies": {
     "@types/bluebird": "3.5.29",
     "@types/node": "12.12.14",
     "@types/validator": "12.0.1",
+    "jest": "^26.6.3",
     "module-alias": "2.2.2",
+    "ts-jest": "^26.4.4",
     "ts-node-dev": "1.0.0-pre.44",
     "typescript": "3.7.2"
   },
