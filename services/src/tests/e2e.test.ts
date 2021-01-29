@@ -49,7 +49,7 @@ try {
     });
     expect(loginUserResponse.dataValues).toEqual(userData);  // THIS TESTS USER CREATION AS WELL
     // EMPTY DB
-  //  sequelize.drop();
+    sequelize.drop();
   });
 } catch (error) {
   console.log('SEQUELIZE INIT ERROR', error);
