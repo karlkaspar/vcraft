@@ -1,15 +1,15 @@
-const dotenv = require("dotenv");
-const path = require("path");
+import { config } from "dotenv";
+import { resolve } from "path";
 
-dotenv.config({ path: path.resolve(__dirname, "../.env") });
+config({ path: resolve(__dirname, "../.env") });
 
-module.exports.development = {
+export const development = {
   dialect: "mysql",
   seederStorage: "sequelize",
   url: process.env.DB_URL
 };
 
-module.exports.production = {
+export const production = {
   dialect: "mysql",
   url: process.env.DB_URL
 };

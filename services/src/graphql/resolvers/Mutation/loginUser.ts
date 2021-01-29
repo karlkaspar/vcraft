@@ -4,7 +4,6 @@ const loginUser = async (variables: any, {email, password}: {email: string, pass
   console.log(variables);
   try {
     const res = await User.findOne({ where: { email, password } });
-    console.log(res);
     if (!res) {
       return null;
     }

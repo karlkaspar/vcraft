@@ -8,6 +8,10 @@
     "moduleResolution": "node",
     "strict": true,
     "target": "es6",
-    "types": ["node"]
-  }
+    "types": ["node", "jest", "@types/jest"],
+
+  },
+  "exclude": [
+   "src/**/*.spec.ts"
+ ]
 }
