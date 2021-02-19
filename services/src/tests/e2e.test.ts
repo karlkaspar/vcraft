@@ -78,7 +78,9 @@ test("USER CREATION, USER LOGIN", async (done) => {
     password: password
   });
 
-  expect(loginUserResponse).toEqual(userData); // THIS TESTS USER CREATION AS WELL
+  expect(loginUserResponse).toEqual(userData);
+  // THIS TESTS USER CREATION AS WELL
+  // THOUGH SHOULD AND WILL BE REPLACED WITH USER REGISTER COMPONENT
   console.log('afterAll');
   // DROP DB AND CLOSE CONNECTION
   await sequelize.drop();
