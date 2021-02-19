@@ -1,5 +1,5 @@
 import { gql } from "apollo-server";
-// THIS IS PRETTY MUCH LIKE AN INTERFACE, DATA SCHEMA
+// THIS IS PRETTY MUCH LIKE AN INTERFACE, DATA SCHEMA, DECLARES WHICH MUTATIONS WE USE, AND WHAT DO THEY USE
 const typeDefs = gql`
   type User {
     id: ID!
